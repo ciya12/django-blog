@@ -1,0 +1,51 @@
+{% extends 'blog/base.html' %}
+
+{% block title %}我的项目{% endblock %}
+
+{% block content %}
+<h1 class="mb-4">我的项目</h1>
+
+<div class="row">
+    <div class="col-md-6 mb-3">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">门禁识别系统</h5>
+                <p class="card-text">基于YOLO的人脸检测，实现实时门禁控制。包含图像采集、人脸识别、权限管理等功能。</p>
+                <p><strong>技术：</strong> Python, YOLO, OpenCV, Django</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 mb-3">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">ROS机器人</h5>
+                <p class="card-text">基于ROS的移动机器人，实现SLAM建图与自主导航。</p>
+                <p><strong>技术：</strong> ROS, C++, Python, Gazebo</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 mb-3">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">传感器数据采集小车</h5>
+                <p class="card-text">基于Arduino的传感器小车，采集温湿度、距离等环境数据。</p>
+                <p><strong>技术：</strong> Arduino, C, 传感器</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 mb-3">
+        <div class="card h-100">
+            <div class="card-body">
+                <h5 class="card-title">数学建模比赛</h5>
+                <p class="card-text">多次参加全国大学生数学建模竞赛，擅长数据处理与模型构建。</p>
+                <p><strong>技术：</strong> Python, pandas, sklearn, 优化算法</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mt-4">
+    <a href="/" class="btn btn-secondary">返回首页</a>
+</div>
+
+{% endblock %}

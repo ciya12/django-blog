@@ -1,0 +1,22 @@
+{% extends 'blog/base.html' %}
+
+{% block title %}{{ category.name }}{% endblock %}
+
+{% block content %}
+<h1>分类：{{ category.name }}</h1>
+
+{% for article in articles %}
+    <div class="card mb-3">
+        <div class="card-body">
+            <h5 class="card-title">
+                <a href="/blog/{{ article.id }}/">{{ article.title }}</a>
+            </h5>
+            <p class="card-text text-muted">{{ article.created_at|date:"Y-m-d H:i" }}</p>
+        </div>
+    </div>
+{% empty %}
+    <p>暂无文章</p>
+{% endfor %}
+
+<a href="/blog/" class="btn btn-secondary mt-3">返回博客首页</a>
+{% endblock %}
